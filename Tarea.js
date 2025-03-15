@@ -14,8 +14,9 @@
 // let promesa = new Promise((resolve, reject) => {
 //     setTimeout(() => resolve("Operación Completada"), 3000);
 // });
-
 // promesa.then(resultado => console.log(resultado));
+
+console.log("test")
 
 // Ejemplo de async/await
 async function fetchData() {
@@ -27,7 +28,7 @@ async function fetchData() {
             const tr = document.createElement("tr")
             console.log(data[i])
             elementos = data [i]
-            for(let [clave, valor] of object.entries(elementos)){
+            for(let [clave, valor] of Object.entries(elementos)){
                 const td = document.createElement("td")
                 td.innerHTML = valor
                 tr.appendChild(td)
